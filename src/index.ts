@@ -1,5 +1,45 @@
-/**
- * Main entry point for the Claude prompts builder package
- */
+// Export types
+export type {
+  Language,
+  TranslatedText,
+  Module,
+  SelectAnswer,
+  Answer,
+  Question,
+  ClaudeQueryData,
+  ClaudeBrainstormData,
+  ClaudeMathCharacterData,
+  ClaudeModuleLearningData,
+} from './types'
 
-export { hello } from './hello.js'
+// Export utilities
+export {
+  translate,
+  safeTranslate,
+  hasSelectAnswers,
+  isSelectAnswerWithCorrectFlag,
+  hasTranslationText,
+  hasStringText,
+  isQuestionForClaude,
+  isModuleForClaude,
+  extractCorrectAnswers,
+  extractAnswerOptions,
+  extractModuleNamesFromBlock,
+  extractPrerequisiteNames,
+  extractPostrequisiteNames,
+} from './utils'
+
+// Export generators
+export {
+  generateClaudeUrl,
+  generateClaudeBrainstormUrl,
+  generateClaudeMathCharacterUrl,
+  generateClaudeModuleLearningUrl,
+} from './generators'
+
+// Export extractors
+export {
+  extractQuestionDataForClaude,
+  extractQuestionDataForBrainstorm,
+  extractModuleDataForClaude,
+} from './extractors'

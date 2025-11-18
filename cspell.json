@@ -11,7 +11,9 @@
     "tsconfig",
     "esbenp",
     "lumina",
-    "commitlint"
+    "commitlint",
+    "postrequisite",
+    "postrequisites"
   ],
   "ignorePaths": [
     "node_modules",
