@@ -1,6 +1,6 @@
 {
   "name": "@lumina-study/claude-prompts-builder",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Claude AI URL generation utilities for learning assistance with module and question data extraction",
   "type": "module",
   "main": "./dist/index.js",
